@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_i2f_fast_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_i2f_fast" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="29930612fs"></ZoomEndTime>
+      <Cursor1Time time="2333000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="202"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="67" />
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/flush_i">
+      <obj_property name="ElementShortName">flush_i</obj_property>
+      <obj_property name="ObjectShortName">flush_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/adv_i">
+      <obj_property name="ElementShortName">adv_i</obj_property>
+      <obj_property name="ObjectShortName">adv_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/start_i">
+      <obj_property name="ElementShortName">start_i</obj_property>
+      <obj_property name="ObjectShortName">start_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/opa_i">
+      <obj_property name="ElementShortName">opa_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">opa_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/rmode_i">
+      <obj_property name="ElementShortName">rmode_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rmode_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/i2f_fast_result_o">
+      <obj_property name="ElementShortName">i2f_fast_result_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i2f_fast_result_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/i2f_fast_ready_o">
+      <obj_property name="ElementShortName">i2f_fast_ready_o</obj_property>
+      <obj_property name="ObjectShortName">i2f_fast_ready_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/fpcsr_o">
+      <obj_property name="ElementShortName">fpcsr_o[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fpcsr_o[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/rm_nearest">
+      <obj_property name="ElementShortName">rm_nearest</obj_property>
+      <obj_property name="ObjectShortName">rm_nearest</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/rm_to_zero">
+      <obj_property name="ElementShortName">rm_to_zero</obj_property>
+      <obj_property name="ObjectShortName">rm_to_zero</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/rm_to_infp">
+      <obj_property name="ElementShortName">rm_to_infp</obj_property>
+      <obj_property name="ObjectShortName">rm_to_infp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/rm_to_infm">
+      <obj_property name="ElementShortName">rm_to_infm</obj_property>
+      <obj_property name="ObjectShortName">rm_to_infm</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1t_signa">
+      <obj_property name="ElementShortName">s1t_signa</obj_property>
+      <obj_property name="ObjectShortName">s1t_signa</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1t_fract32">
+      <obj_property name="ElementShortName">s1t_fract32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s1t_fract32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1t_shrx">
+      <obj_property name="ElementShortName">s1t_shrx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s1t_shrx[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1t_shlx">
+      <obj_property name="ElementShortName">s1t_shlx[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s1t_shlx[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_sign">
+      <obj_property name="ElementShortName">s1o_sign</obj_property>
+      <obj_property name="ObjectShortName">s1o_sign</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_shr">
+      <obj_property name="ElementShortName">s1o_shr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s1o_shr[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_shl">
+      <obj_property name="ElementShortName">s1o_shl[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s1o_shl[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_exp8shr">
+      <obj_property name="ElementShortName">s1o_exp8shr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s1o_exp8shr[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_exp8shl">
+      <obj_property name="ElementShortName">s1o_exp8shl[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s1o_exp8shl[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_exp8sh0">
+      <obj_property name="ElementShortName">s1o_exp8sh0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s1o_exp8sh0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_fract32">
+      <obj_property name="ElementShortName">s1o_fract32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s1o_fract32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s1o_rdy">
+      <obj_property name="ElementShortName">s1o_rdy</obj_property>
+      <obj_property name="ObjectShortName">s1o_rdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_sign">
+      <obj_property name="ElementShortName">s2t_sign</obj_property>
+      <obj_property name="ObjectShortName">s2t_sign</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_fract35">
+      <obj_property name="ElementShortName">s2t_fract35[34:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_fract35[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_inv">
+      <obj_property name="ElementShortName">s2t_inv</obj_property>
+      <obj_property name="ObjectShortName">s2t_inv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_inf">
+      <obj_property name="ElementShortName">s2t_inf</obj_property>
+      <obj_property name="ObjectShortName">s2t_inf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_snan">
+      <obj_property name="ElementShortName">s2t_snan</obj_property>
+      <obj_property name="ObjectShortName">s2t_snan</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_qnan">
+      <obj_property name="ElementShortName">s2t_qnan</obj_property>
+      <obj_property name="ObjectShortName">s2t_qnan</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_anan_sign">
+      <obj_property name="ElementShortName">s2t_anan_sign</obj_property>
+      <obj_property name="ObjectShortName">s2t_anan_sign</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_shr_t">
+      <obj_property name="ElementShortName">s2t_shr_t[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_shr_t[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_shr">
+      <obj_property name="ElementShortName">s2t_shr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_shr[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_shl">
+      <obj_property name="ElementShortName">s2t_shl[4:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_shl[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_fract35sh">
+      <obj_property name="ElementShortName">s2t_fract35sh[34:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_fract35sh[34:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2r_sticky">
+      <obj_property name="ElementShortName">s2r_sticky</obj_property>
+      <obj_property name="ObjectShortName">s2r_sticky</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2l_sticky">
+      <obj_property name="ElementShortName">s2l_sticky</obj_property>
+      <obj_property name="ObjectShortName">s2l_sticky</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_sticky">
+      <obj_property name="ElementShortName">s2t_sticky</obj_property>
+      <obj_property name="ObjectShortName">s2t_sticky</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_exp10shr">
+      <obj_property name="ElementShortName">s2t_exp10shr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_exp10shr[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_exp10shl">
+      <obj_property name="ElementShortName">s2t_exp10shl[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_exp10shl[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_exp10sh0">
+      <obj_property name="ElementShortName">s2t_exp10sh0[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_exp10sh0[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2t_exp10">
+      <obj_property name="ElementShortName">s2t_exp10[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s2t_exp10[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_sign">
+      <obj_property name="ElementShortName">s2o_sign</obj_property>
+      <obj_property name="ObjectShortName">s2o_sign</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_exp10">
+      <obj_property name="ElementShortName">s2o_exp10[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s2o_exp10[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_fract32">
+      <obj_property name="ElementShortName">s2o_fract32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s2o_fract32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_rs">
+      <obj_property name="ElementShortName">s2o_rs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s2o_rs[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_inv">
+      <obj_property name="ElementShortName">s2o_inv</obj_property>
+      <obj_property name="ObjectShortName">s2o_inv</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_inf">
+      <obj_property name="ElementShortName">s2o_inf</obj_property>
+      <obj_property name="ObjectShortName">s2o_inf</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_snan_i">
+      <obj_property name="ElementShortName">s2o_snan_i</obj_property>
+      <obj_property name="ObjectShortName">s2o_snan_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_qnan_i">
+      <obj_property name="ElementShortName">s2o_qnan_i</obj_property>
+      <obj_property name="ObjectShortName">s2o_qnan_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_anan_sign_i">
+      <obj_property name="ElementShortName">s2o_anan_sign_i</obj_property>
+      <obj_property name="ObjectShortName">s2o_anan_sign_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s2o_rdy">
+      <obj_property name="ElementShortName">s2o_rdy</obj_property>
+      <obj_property name="ObjectShortName">s2o_rdy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_g">
+      <obj_property name="ElementShortName">s3t_g</obj_property>
+      <obj_property name="ObjectShortName">s3t_g</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_r">
+      <obj_property name="ElementShortName">s3t_r</obj_property>
+      <obj_property name="ObjectShortName">s3t_r</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_s">
+      <obj_property name="ElementShortName">s3t_s</obj_property>
+      <obj_property name="ObjectShortName">s3t_s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_lost">
+      <obj_property name="ElementShortName">s3t_lost</obj_property>
+      <obj_property name="ObjectShortName">s3t_lost</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_rnd_up">
+      <obj_property name="ElementShortName">s3t_rnd_up</obj_property>
+      <obj_property name="ObjectShortName">s3t_rnd_up</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_rnd_v32">
+      <obj_property name="ElementShortName">s3t_rnd_v32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s3t_rnd_v32[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_fract32_rnd">
+      <obj_property name="ElementShortName">s3t_fract32_rnd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s3t_fract32_rnd[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_f32_shr">
+      <obj_property name="ElementShortName">s3t_f32_shr</obj_property>
+      <obj_property name="ObjectShortName">s3t_f32_shr</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_f32_exp10">
+      <obj_property name="ElementShortName">s3t_f32_exp10[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s3t_f32_exp10[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_f32_fract24">
+      <obj_property name="ElementShortName">s3t_f32_fract24[23:0]</obj_property>
+      <obj_property name="ObjectShortName">s3t_f32_fract24[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/u_i2f_fast_cnv/s3t_f32_fract24_dn">
+      <obj_property name="ElementShortName">s3t_f32_fract24_dn</obj_property>
+      <obj_property name="ObjectShortName">s3t_f32_fract24_dn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_i2f_fast/pfpu0/fpu_result_o">
+      <obj_property name="ElementShortName">fpu_result_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fpu_result_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_i2f_fast/pfpu0/fpu_arith_valid_o">
+      <obj_property name="ElementShortName">fpu_arith_valid_o</obj_property>
+      <obj_property name="ObjectShortName">fpu_arith_valid_o</obj_property>
+   </wvobject>
+</wave_config>

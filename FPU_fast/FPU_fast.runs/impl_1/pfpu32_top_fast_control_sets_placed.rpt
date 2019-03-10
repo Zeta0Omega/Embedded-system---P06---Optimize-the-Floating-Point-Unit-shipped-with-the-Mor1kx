@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Mar  9 17:21:36 2019
+| Host         : luca-N56JN running 64-bit Ubuntu 16.04.4 LTS
+| Command      : report_control_sets -verbose -file pfpu32_top_fast_control_sets_placed.rpt
+| Design       : pfpu32_top_fast
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|     14 |            1 |
+|    16+ |           10 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              24 |           11 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             744 |          173 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             588 |          112 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------+--------------------------------------------+------------------+----------------+
+|  Clock Signal  |         Enable Signal         |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++----------------+-------------------------------+--------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | u_f32_mul_fast/new_data_reg   | u_f32_addsub/fpcsr_o_reg[10]_0             |                1 |              2 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_mul_fast/s1o_is_shifted_i_1_n_0      |                1 |              2 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_mul_fast/SR[0]                       |                3 |             14 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_mul_fast/s0o_exp10rx[8]_i_1_n_0      |                3 |             16 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_mul_fast/s0o_exp10c[8]_i_1_n_0       |                3 |             18 |
+|  clk_IBUF_BUFG |                               |                                            |               11 |             24 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_addsub/fpcsr_o_reg[10]_0             |                9 |             36 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_addsub/SR[0]                         |                8 |             44 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_addsub/add_fast_result_o[21]_i_1_n_0 |               10 |             44 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f32_mul_fast/s1o_fract24_nsh_reg[23]     |               17 |             96 |
+|  clk_IBUF_BUFG | padv_decode_i_IBUF            | u_f32_addsub/fpcsr_o_reg[10]_0             |               27 |            128 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units | u_f2i_cnv/f2i_fast_ready_o_reg_0           |               30 |            188 |
+|  clk_IBUF_BUFG | u_f32_mul_fast/padv_fpu_units |                                            |              175 |            750 |
++----------------+-------------------------------+--------------------------------------------+------------------+----------------+
+
+

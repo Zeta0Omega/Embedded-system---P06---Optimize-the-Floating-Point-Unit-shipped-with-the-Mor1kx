@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="170759546fs"></ZoomStartTime>
+      <ZoomEndTime time="238848091fs"></ZoomEndTime>
+      <Cursor1Time time="227500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="214"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject type="logic" fp_name="/tb/pfpu0/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/pfpu0/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/pfpu0/flush_i">
+      <obj_property name="ElementShortName">flush_i</obj_property>
+      <obj_property name="ObjectShortName">flush_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/pfpu0/padv_decode_i">
+      <obj_property name="ElementShortName">padv_decode_i</obj_property>
+      <obj_property name="ObjectShortName">padv_decode_i</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/pfpu0/padv_execute_i">
+      <obj_property name="ElementShortName">padv_execute_i</obj_property>
+      <obj_property name="ObjectShortName">padv_execute_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/op_fpu_i">
+      <obj_property name="ElementShortName">op_fpu_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">op_fpu_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/round_mode_i">
+      <obj_property name="ElementShortName">round_mode_i[1:0]</obj_property>
+      <obj_property name="ObjectShortName">round_mode_i[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/opa_i">
+      <obj_property name="ElementShortName">opa_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">opa_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/rfa_i">
+      <obj_property name="ElementShortName">rfa_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rfa_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/opb_i">
+      <obj_property name="ElementShortName">opb_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">opb_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/rfb_i">
+      <obj_property name="ElementShortName">rfb_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rfb_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/af">
+      <obj_property name="ElementShortName">af[31:0]</obj_property>
+      <obj_property name="ObjectShortName">af[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/bf">
+      <obj_property name="ElementShortName">bf[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bf[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/temp_res">
+      <obj_property name="ElementShortName">temp_res[31:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_res[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/fpu_result_o">
+      <obj_property name="ElementShortName">fpu_result_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fpu_result_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/pfpu0/fpu_arith_valid_o">
+      <obj_property name="ElementShortName">fpu_arith_valid_o</obj_property>
+      <obj_property name="ObjectShortName">fpu_arith_valid_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/pfpu0/fpcsr_o">
+      <obj_property name="ElementShortName">fpcsr_o[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fpcsr_o[11:0]</obj_property>
+   </wvobject>
+</wave_config>

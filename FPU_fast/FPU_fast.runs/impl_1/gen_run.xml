@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552148364">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="pfpu32_top_fast.drc"/>
+  <File Type="BG-BGN" Name="pfpu32_top_fast.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="pfpu32_top_fast.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="pfpu32_top_fast.ltx"/>
+  <File Type="BITSTR-MMI" Name="pfpu32_top_fast.mmi"/>
+  <File Type="BITSTR-BMM" Name="pfpu32_top_fast_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="pfpu32_top_fast.nky"/>
+  <File Type="BITSTR-RBT" Name="pfpu32_top_fast.rbt"/>
+  <File Type="BITSTR-MSK" Name="pfpu32_top_fast.msk"/>
+  <File Type="BG-BIN" Name="pfpu32_top_fast.bin"/>
+  <File Type="BG-BIT" Name="pfpu32_top_fast.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="pfpu32_top_fast_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="pfpu32_top_fast_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="pfpu32_top_fast_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="pfpu32_top_fast.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pfpu32_top_fast_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pfpu32_top_fast_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pfpu32_top_fast_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pfpu32_top_fast_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pfpu32_top_fast_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="pfpu32_top_fast_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="pfpu32_top_fast_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="pfpu32_top_fast_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pfpu32_top_fast_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="pfpu32_top_fast_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pfpu32_top_fast_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="pfpu32_top_fast_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="pfpu32_top_fast_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="pfpu32_top_fast_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="pfpu32_top_fast_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="pfpu32_top_fast_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pfpu32_top_fast_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pfpu32_top_fast_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="pfpu32_top_fast_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="pfpu32_top_fast_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="pfpu32_top_fast_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="pfpu32_top_fast_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pfpu32_top_fast_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="pfpu32_top_fast_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="pfpu32_top_fast_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="pfpu32_top_fast_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="pfpu32_top_fast_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pfpu32_top_fast_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pfpu32_top_fast_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pfpu32_top_fast_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="pfpu32_top_fast_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pfpu32_top_fast_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pfpu32_top_fast_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="pfpu32_top_fast_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pfpu32_top_fast_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="pfpu32_top_fast_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pfpu32_top_fast_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="pfpu32_top_fast_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="pfpu32_top_fast_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="pfpu32_top_fast_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="pfpu32_top_fast_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="pfpu32_top_fast_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="pfpu32_top_fast_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="pfpu32_top_fast.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pfpu32_top_fast_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="pfpu32_top_fast_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="pfpu32_top_fast_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="pfpu32_top_fast_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="pfpu32_top_fast_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="pfpu32_top_fast_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="pfpu32_top_fast_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="pfpu32_top_fast.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/mor1kx-sprs.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FPU_initial/FPU_initial.srcs/sources_1/imports/pfpu32/mor1kx-sprs.v"/>
+        <Attr Name="ImportTime" Val="1477869735"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/mor1kx-defines.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FPU_initial/FPU_initial.srcs/sources_1/imports/pfpu32/mor1kx-defines.v"/>
+        <Attr Name="ImportTime" Val="1535981449"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/pfpu32_addsub_fast.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/pfpu32_f2i.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FPU_initial/FPU_initial.srcs/sources_1/imports/pfpu32/pfpu32_f2i.v"/>
+        <Attr Name="ImportTime" Val="1477869735"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/pfpu32_i2f_fast.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../FPU_initial/FPU_initial.srcs/sources_1/imports/pfpu32/pfpu32_i2f_fast.v"/>
+        <Attr Name="ImportTime" Val="1545077961"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/pfpu32_mul_fast.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/pfpu32_top_fast.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/pfpu32/tb.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="pfpu32_top_fast"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/timing.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

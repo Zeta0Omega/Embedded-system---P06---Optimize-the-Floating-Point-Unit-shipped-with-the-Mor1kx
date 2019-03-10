@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../FPU_fast.srcs/sources_1/imports/pfpu32/pfpu32_addsub_fast.v" \
+"../../../../FPU_fast.srcs/sources_1/imports/pfpu32/pfpu32_f2i.v" \
+"../../../../FPU_fast.srcs/sources_1/imports/pfpu32/pfpu32_i2f_fast.v" \
+"../../../../FPU_fast.srcs/sources_1/imports/pfpu32/pfpu32_mul_fast.v" \
+"../../../../FPU_fast.srcs/sources_1/imports/pfpu32/pfpu32_top_fast.v" \
+
+sv xil_defaultlib  \
+"../../../../FPU_fast.srcs/sources_1/imports/pfpu32/tb_i2f.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
