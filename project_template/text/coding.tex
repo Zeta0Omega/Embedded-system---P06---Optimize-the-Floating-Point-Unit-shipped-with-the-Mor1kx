@@ -107,7 +107,8 @@ The algorithm described can be found here \cite{mor1kxRep}.
 \label{fig:top_schema}
 \end{figure}
 
-\textbf{TOP}
+\textbf{TOP} see
+\prettyref{fig:top_schema} for the flowchart.
 \newline
 
 The top module is the module containing all the other modules, in the original version this module was used just to execute some common calculations to all the operations such as the detection of infinite or nan cases. In our modified version we moved part of the computation of the single operations inside it in order to met timing constraints.
@@ -123,17 +124,14 @@ For the addition and subtraction we determine which operand has the greatest exp
 The output are then set taking in consideration which is the operation performed by the FPU and in particular we set if the operation is valid (fpu\textunderscore arith\textunderscore valid\textunderscore o), the actual result (fpu\textunderscore result\textunderscore o) and some useful flags (fpcsr\textunderscore o).
 \newline
 
-\textbf{
-\prettyref{fig:i2f_schema} shows a flowchart regarding the integer to float module.}
-\newline
-
 \begin{figure}
 \centering\includegraphics[width=15cm]{I2FSchema}
 \caption{I2F flowchart}	
 \label{fig:i2f_schema}
 \end{figure}
 
-\textbf{I2F}
+\textbf{I2F} see
+\prettyref{fig:i2f_schema} for the flowchart.
 \newline
 
 The integer to float module receives as input the number to be converted into IEEE 754 floating point representation (32 bit opa\textunderscore i), the sign of the number (sign\textunderscore i) and a bit that signal if the input is zero (zero\textunderscore i), all the input are registered.
@@ -162,17 +160,14 @@ We than compose the result as: 1 bit for the sign, 8 bit for the exponent and 23
 The result and the flags are then registered.
 \newline
 
-\textbf{
-\prettyref{fig:f2i_schema} shows a flowchart regarding the float to integer module.}
-\newline
-
 \begin{figure}
 \centering\includegraphics[width=15cm]{F2ISchema}
 \caption{F2I flowchart}	
 \label{fig:f2i_schema}
 \end{figure}
 
-\textbf{F2I}
+\textbf{F2I} see
+\prettyref{fig:f2i_schema} for the flowchart.
 \newline
 
 The float to integer module receives as input the sign of the number (sign\textunderscore i), the exponent (exp10a\textunderscore i), the mantissa (fract24a\textunderscore i), a bit that signals if we have a sNan (snan\textunderscore i) and a bit that signals if the input is a qNan (qnan\textunderscore i), all the input are registered.
@@ -201,17 +196,14 @@ The output is then assigned checking if we are in an invalid situation (s2t\text
 The result and the flags are then registered.
 \newline
 
-\textbf{
-\prettyref{fig:mult_schema} shows a flowchart regarding the multiplication module.}
-\newline
-
 \begin{figure}
 \centering\includegraphics[width=17.5cm]{MultSchema}
 \caption{Mult flowchart}	
 \label{fig:mult_schema}
 \end{figure}
 
-\textbf{MULT}
+\textbf{MULT} see
+\prettyref{fig:mult_schema} for the flowchart.}
 \newline
 
 The mul\textunderscore fast module receives as inputs the mantissa shifted left for both operands 'a' and 'b' (fract24ash\textunderscore ii and fract24bsh\textunderscore ii), such that the '1.' is in the most significant bit, the sign of the operands (signa\textunderscore ii and signb\textunderscore ii), some flags to detect invalid cases (snan\textunderscore ii, qnan\textunderscore ii, anan\textunderscore sign\textunderscore ii, inv\textunderscore ii, inf\textunderscore ii), a bit that says if at least one of the two operands is zero (opc0\textunderscore ii) and the exponent of the result (exp10mux\textunderscore ii). All these inputs are immediately registered.
