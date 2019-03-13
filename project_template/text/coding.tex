@@ -1,5 +1,5 @@
 \section{Introduction}
-In this project we have analized the behaviour of the implementation of an FPU \cite{mor1kxcode} provided by our professor with the aim of optimize the number of cycles and the operating fraquency.
+In this project we have analized the behaviour of the implementation of an FPU \cite{mor1kxcode} provided by our professor with the aim of optimize the number of cycles and the operating frequency.
 
 
 \subsection{Problem statement}
@@ -33,6 +33,51 @@ Rounding(already included in the count above except compare) & 2                
 \end{center}
 \end{table}
 
+\subsection{Background}
+\textbf{IEEE 754 Single Precision}
+\newline
+
+This is a standard representing floating point numbers on 32 bits. These bits are divided in Sign (S, 1 bit), Exponent (E, 8 bits) and Mantissa, which is the fractional part (M, 23 bits). The number is usually represented in a normalized form, i.e. it is written as $1.(M) * {2}^E $ , thus only the fractional part is represented in M. Regarding, the exponent E, it could be also negative: in order to represent only positive exponents, the standard adds a bias of 127 before representing the exponent in the final result. Amoung the 256 different possible exponents, the value 0 is reserved for zero and denormalized results, while the value 255 is reserved for NaN and infinite values. This means that, if 1 <= E <= 254, the represented number is $ F=(-1)^S * (1.M) * {2}^{(E-127)}$ .
+\newline
+
+\textbf{CONVERSION FROM INTEGER TO FLOAT}
+\newline
+
+The conversion form Integer to Float takes an integer number represented in two's complement, and computes the sign. In case of a negative number, takes the module and computes the exponent. After the exponent computation, shifts right the input number (reducing the size from 32 to 24 bits). At this pont, we can compose the result putting together the sing, the biased exponent, which is the exponent plus 127, and the fractional part, without considering the hidden bit.
+\newline
+
+\textbf{CONVERSION FROM FLOAT TO INTEGER}
+\newline
+
+In the floating to integer conversion we start with a 32 bits number, then this number is split into sign, exponent (8 bits) and mantissa (23 bits). We then convert the exponent into decimal and subtract the bias (in ieee 754 single precision this bias is 127).
+We add the implicit 24th bit to the mantissa, in this way each bit represents a value, starting at 1 and halves for each bit, as follows: bit 23 = 1, bit 22 = 0.5, bit 21 = 0.5 and so on. We can now decode the significand by adding the values represented by these bits. Once we have computed this values we need to multiply with the base 2, to the power of the exponent, to get the final result.
+\newline
+
+\textbf{ADDITION/SUBTRACTION}
+\newline
+
+The floating point addition/subtraction is implemented using the basic algorithm: first, we compute the difference between the exponents in order to detect the greates operand d=Ea-Eb. Then shift the smallest one 'd' positions to the right (aligning it to have the same exponent). At this point, perform the needed operation on the fractional parts:
+\begin{itemize}
+\item in case of a ADD, sum the fractionals if they have the same sign, else subtract them;
+\item in case of a SUB, sum the fractionals if they have different sign, else add them.
+\end{itemize}
+Atfer computing the sum, perform normalization:
+\begin{itemize}
+\item if the result is already normalized, no further operation needed;
+\item in case we are adding the fractionals, we can have 2 leading bits before the ".", in this case, right shift of 1 position the fractional, and increase the exponent by one;
+\item in case we are subtracting the fractionals, we can have 'n' leading zeros, hence shift left of n positions the fractional and decrease the exponent by n.
+\end{itemize}
+After normalization, we can round according to the specified rounding mode and generate the flags on the result, signaling possible exceptions.
+\newline
+
+\textbf{MULTIPLICATION}
+\newline
+
+The algorithm used for the multiplication is the following one. Regarding the mantissas of the two operands, they are multiplied considering also the hidden bit. For the exponent, we sum the unbiased exponents, and then we add again the bias (+ 127) for correct representation in the standard. At this point, we put the results together (sign, biased exponent and mantissa) adding the hidden bit.
+After this, we need to dernomalize, shiftng the significand 1 place o the right, increasing the exponent by 1. The last operation is rounding depending on the desired rounding mode.
+\newline
+
+
 \subsection{Summary of the work}
 We considered 4 operations: floating point addition/subtraction, multiplication (splitting multiplication from division, which was not required by the project), and conversion, from integer to floating point IEEE754 representation and viceversa. We optimized these operations, reducing the number of needed cycles (from the rising edge of the new\textunderscore fpu\textunderscore data to the rising edge of the fpu\textunderscore arith\textunderscore valid\textunderscore o), having as a constraint the maximum clock period of 7ns. In order to do this, we eliminated some stages, anticipating computation in the previous stages, or delaying it in the following ones.
 
@@ -52,6 +97,16 @@ In the following description we will use the following convention/notation, firs
 The algorithm described can be found here \cite{mor1kxRep}.
 \newline
 
+\textbf{
+\prettyref{fig:top_schema} shows a flowchart regarding the top module.}
+\newline
+
+\begin{figure}
+\centering\includegraphics[width=15cm]{TopSchema}
+\caption{Top flowchart}	
+\label{fig:top_schema}
+\end{figure}
+
 \textbf{TOP}
 \newline
 
@@ -67,6 +122,16 @@ For the addition and subtraction we determine which operand has the greatest exp
 
 The output are then set taking in consideration which is the operation performed by the FPU and in particular we set if the operation is valid (fpu\textunderscore arith\textunderscore valid\textunderscore o), the actual result (fpu\textunderscore result\textunderscore o) and some useful flags (fpcsr\textunderscore o).
 \newline
+
+\textbf{
+\prettyref{fig:i2f_schema} shows a flowchart regarding the integer to float module.}
+\newline
+
+\begin{figure}
+\centering\includegraphics[width=15cm]{I2FSchema}
+\caption{I2F flowchart}	
+\label{fig:i2f_schema}
+\end{figure}
 
 \textbf{I2F}
 \newline
@@ -97,6 +162,16 @@ We than compose the result as: 1 bit for the sign, 8 bit for the exponent and 23
 The result and the flags are then registered.
 \newline
 
+\textbf{
+\prettyref{fig:f2i_schema} shows a flowchart regarding the float to integer module.}
+\newline
+
+\begin{figure}
+\centering\includegraphics[width=15cm]{F2ISchema}
+\caption{F2I flowchart}	
+\label{fig:f2i_schema}
+\end{figure}
+
 \textbf{F2I}
 \newline
 
@@ -125,6 +200,16 @@ The output is then assigned checking if we are in an invalid situation (s2t\text
 
 The result and the flags are then registered.
 \newline
+
+\textbf{
+\prettyref{fig:mult_schema} shows a flowchart regarding the multiplication module.}
+\newline
+
+\begin{figure}
+\centering\includegraphics[width=17.5cm]{MultSchema}
+\caption{Mult flowchart}	
+\label{fig:mult_schema}
+\end{figure}
 
 \textbf{MULT}
 \newline
@@ -162,6 +247,16 @@ In the last stage, we compute the final sticky bit (s2r\textunderscore sticky) a
 Then we compute the final exponent on 10 bits (s2t\textunderscore f32\textunderscore exp10) and the fractional on 24 bits (s2t\textunderscore f32\textunderscore fract24).
 After this, we compute some useful flags and we compose the final result (s2t\textunderscore opc), giving priority to the exceptions. At the end of the module, these outputs are registered.
 \newline
+
+\textbf{
+\prettyref{fig:add_schema} shows a flowchart regarding the addition/subtraction module.}
+\newline
+
+\begin{figure}
+\centering\includegraphics[width=15cm]{AddSchema}
+\caption{Add flowchart}	
+\label{fig:add_schema}
+\end{figure}
 
 \textbf{ADD/SUB}
 \newline
@@ -207,7 +302,7 @@ Here we provide the result of our design, in particular we will provide both the
 \begin{table}
 \small
 \begin{center}
-\caption{Number of cycles of our implemneted design}
+\caption{Number of cycles of our implemented design}
 
 \begin{tabular}{@{}|c|c|c|@{}}
 \toprule

@@ -14,7 +14,8 @@ Luca~Guzla Lorenzo~Fumagalli.
 \bibitem{mor1kxtest}
 Luca~Guzla Lorenzo~Fumagalli.
 \newblock mor1kx code test,
-  https://github.com/zeta0omega/embedded-system---p06---optimize-the-floating-point-unit-shipped-with-the-mor1kx.
+  https://github.com/zeta0omega/embedded-system---p06---optimize-the-floating-point-unit-shipped-with-the-mor1kx/test\textunderscore
+  new\textunderscore modules.
 \newblock 2019.
 
 \end{thebibliography}
